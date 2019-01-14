@@ -68,7 +68,7 @@
       "[parameters('contentVersionOverride')]"
     ],
     "contentVersion": "[variables('contentVersions')[length(take(parameters('contentVersionOverride'),1))]]",
-    "contentRootUrl": "[concat('https://raw.githubusercontent.com/EthereumEx/ethereum-arm-templates/', variables('contentVersion'), '/ethereum-consortium')]",
+    "contentRootUrl": "[concat('https://raw.githubusercontent.com/fstnetwork/ethereum-arm-templates/', variables('contentVersion'), '/ethereum-consortium')]",
     "contentRoots": [
       "[variables('contentRootUrl')]",
       "[parameters('contentRootOverride')]"
@@ -76,7 +76,7 @@
     "contentRoot": "[variables('contentRoots')[length(take(parameters('contentRootOverride'),1))]]",
     "resourceLocation": "[resourceGroup().location]",
     "dConsortiumName": "[concat('Consortium.', parameters('prefixName'))]",
-    "dockerImage": "ethereumex/geth-node:alpine-latest", 
+    "dockerImage": "fstnetwork/geth-node:alpine-latest", 
     "networkId" : "3",
     "genesisJson": {
     },

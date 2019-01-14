@@ -114,17 +114,17 @@
       "type": "string"
     },
     "dashboardDockerImage": {
-      "defaultValue": "ethereumex/eth-stats-dashboard:latest",
+      "defaultValue": "fstnetwork/eth-stats-dashboard:latest",
       "type": "string",
       "allowedValues": [
-        "ethereumex/eth-stats-dashboard:latest"
+        "fstnetwork/eth-stats-dashboard:latest"
       ]
     },
     "txNodeDockerImage": {
-      "defaultValue": "ethereumex/geth-node:latest-alpine",
+      "defaultValue": "fstnetwork/geth-node:latest-alpine",
       "type": "string",
       "allowedValues": [
-        "ethereumex/geth-node:latest-alpine"
+        "fstnetwork/geth-node:latest-alpine"
       ]
     },
     "allowPublicRPC": {
@@ -147,10 +147,10 @@
       "defaultValue": ""
     },
     "minerNodeDockerImage": {
-      "defaultValue": "ethereumex/geth-node:latest-alpine",
+      "defaultValue": "fstnetwork/geth-node:latest-alpine",
       "type": "string",
       "allowedValues": [
-        "ethereumex/geth-node:latest-alpine"
+        "fstnetwork/geth-node:latest-alpine"
       ]
     },
     "locationOverride": {
@@ -162,7 +162,7 @@
     }
   },
   "variables": {
-    "contentRootUrl": "[concat('https://raw.githubusercontent.com/EthereumEx/ethereum-arm-templates/', parameters('contentVersion'), '/ethereum-consortium')]",
+    "contentRootUrl": "[concat('https://raw.githubusercontent.com/fstnetwork/ethereum-arm-templates/', parameters('contentVersion'), '/ethereum-consortium')]",
     "contentRoots": [
       "[variables('contentRootUrl')]",
       "[parameters('contentRootOverride')]"

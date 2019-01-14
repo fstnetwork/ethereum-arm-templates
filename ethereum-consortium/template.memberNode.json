@@ -63,7 +63,7 @@
   },
   "variables": {
     "utilityContentVersion" : "Release-v2.0.0",
-    "utilityContentRoot": "[concat('https://raw.githubusercontent.com/EthereumEx/arm-template-utilities/', variables('utilityContentVersion'))]",
+    "utilityContentRoot": "[concat('https://raw.githubusercontent.com/fstnetwork/arm-template-utilities/', variables('utilityContentVersion'))]",
     "resourceLocation": "[parameters('location')]",
     "initCommands": [
       {

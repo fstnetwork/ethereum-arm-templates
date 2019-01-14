@@ -1,7 +1,7 @@
 version: '3'
 services:
   boot-node:
-    image: ethereumex/bootnode-registrar:node
+    image: fstnetwork/bootnode-registrar:node
     hostname: ${HOST_NAME}-d
     restart: always
     environment:
@@ -9,7 +9,7 @@ services:
     ports:
       - "3001:3001"
   dashboard:
-    image: ethereumex/eth-netstats:node
+    image: fstnetwork/eth-netstats:node
     hostname: ${HOST_NAME}-d
     restart: always
     environment:
